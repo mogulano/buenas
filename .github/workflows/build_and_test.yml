@@ -1,0 +1,17 @@
+name: Build & Test
+on:
+  pull_request:
+    paths-ignore:
+    # ignore markdown files (CHANGELOG.md, README.md, etc.)
+    - '**/*.md'
+    - '.github/workflows/release.yml'
+    - 'changelog/**'
+    - 'kong.conf.default'
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    steps:
+    - name: Lint Lua code
+      run: |
+          echo "bbb"
