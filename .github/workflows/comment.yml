@@ -14,6 +14,8 @@ jobs:
       contains(github.event.comment.body, '/doit')
     steps:
       - uses: actions/cache@v4
+        with:
+          key: bazel-cache-${{ runner.os }}
       - run:
           printenv
       - uses: gotson/pull-request-comment-branch@head-repo-owner-dist
