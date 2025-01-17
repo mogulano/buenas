@@ -16,6 +16,7 @@ jobs:
       - uses: actions/cache@v4
         with:
           key: bazel-cache-${{ runner.os }}
+          path: '~/.cache'
       - run:
           printenv
       - uses: gotson/pull-request-comment-branch@head-repo-owner-dist
