@@ -10,7 +10,6 @@ jobs:
     - uses: actions/setup-node@v4
       with:
         node-version: '16'
-        cache: yarn
     - name: aaa
       run: |
           echo "1111111"
