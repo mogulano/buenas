@@ -13,6 +13,7 @@ jobs:
       github.event.issue.pull_request &&
       contains(github.event.comment.body, '/doit')
     steps:
+      - uses: actions/cache@v4
       - run:
           printenv
       - uses: gotson/pull-request-comment-branch@head-repo-owner-dist
