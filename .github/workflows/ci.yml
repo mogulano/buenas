@@ -1,0 +1,16 @@
+on:
+  pull_request_target:
+
+permissions: {}
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    steps:
+    - run: |
+        echo "running pull request target"
+  build2:
+    runs-on: ubuntu-22.04
+    steps:
+    - run: |
+        echo The Title of your PR is ${{ github.event.pull_request.title }}
