@@ -14,4 +14,4 @@ jobs:
     steps:
     - run: |
             echo "777"
-            echo The Title of your PR is ${{ github.event.pull_request.title }}
+            echo The Title of your PR is unknown
