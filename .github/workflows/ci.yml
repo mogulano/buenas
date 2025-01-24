@@ -1,5 +1,5 @@
 on:
-  pull_request:
+  pull_request_target:
 
 permissions: {}
 
@@ -13,5 +13,5 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
     - run: |
-            echo "777"
-            echo The Title of your PR is unknown
+            echo "888"
+            echo The Title of your PR is ${{ github.event.pull_request.title }}
