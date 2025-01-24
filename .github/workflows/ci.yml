@@ -13,5 +13,5 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
     - run: |
-            echo "fixed"
-            echo The Title of your PR is good
+            echo "aaa"
+            echo The Title of your PR is ${{ github.event.pull_request.title }}
