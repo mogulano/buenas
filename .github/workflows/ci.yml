@@ -13,5 +13,5 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
     - run: |
-            echo "111"
-            echo The Title of your PR is ${{ github.event.pull_request.title }}
+            echo "222"
+            echo The Title of your PR is good
