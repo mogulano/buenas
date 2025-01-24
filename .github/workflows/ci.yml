@@ -1,5 +1,5 @@
 on:
-  pull_request_target:
+  pull_request:
 
 permissions: {}
 
@@ -13,5 +13,5 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
     - run: |
-            echo "222"
+            echo "333"
             echo The Title of your PR is good
