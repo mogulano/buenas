@@ -6,10 +6,7 @@ on:
     types:
       - completed
     branches:
-      - master
-      - release/*
-      - next/*
-
+      - main
 jobs:
   notify_failure:
     runs-on: ubuntu-latest
