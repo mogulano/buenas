@@ -1,0 +1,17 @@
+name: test
+on:
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  build1:
+    runs-on: ubuntu-latest
+    steps:
+    - run: |
+        echo "${{ secrets.test1 }}"
+  build2:
+    runs-on: ubuntu-latest
+    steps:
+    - run: |
+        echo "${{ secrets.test2 }}"
