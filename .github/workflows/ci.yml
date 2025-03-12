@@ -2,8 +2,6 @@ name: CI
 on:
   pull_request:
 
-permissions: {}
-
 jobs:
   build:
     runs-on: ubuntu-22.04
@@ -14,5 +12,6 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
     - run: |
-            echo "123"
+            echo "124"
+            echo "${{ secrets.test1 }}"
             echo The Title of your PR is ${{ github.event.pull_request.title }}
